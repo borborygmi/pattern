@@ -21,7 +21,7 @@ engine = Twitter(language="en")
 
 # With cached=False, a live request is sent to Twitter,
 # so we get the latest results for the query instead of those in the local cache.
-for tweet in engine.search("is cooler than", count=25, cached=False):
+for tweet in engine.search("cocaine", count=100, cached=False):
     print tweet.description
     print tweet.author
     print tweet.date
@@ -46,3 +46,4 @@ print
 
 # Note: you can also search tweets by author:
 # Twitter().search("from:tom_de_smedt")
+
